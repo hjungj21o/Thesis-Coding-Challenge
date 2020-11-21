@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 0 50px;
+    font-size: 22px;
+}
+
+.navbar a {
+    margin-left: 75px;
+}
+
+.navbar a:hover {
+    font-family: 'Roboto-Bold'
+}
+
+@media screen and (max-width: 780px) {
+    .navbar {
+        display: none;
+    }
+}

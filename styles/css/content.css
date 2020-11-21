@@ -1,0 +1,162 @@
+
+/* Grid on main content */
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 150px 100px;
+    height: 50vh;
+}
+
+
+/* Left side of grid */
+
+#main-text-container {
+    max-width: 500px;
+}
+#main-text-container h1 {
+    font-family: 'Roboto-Medium';
+    font-size: 70px;
+    width: 100%;
+    padding-bottom: .6em;
+    line-height: 115%;
+}
+
+#main-text-container p {
+    font-family: 'Roboto-Thin';
+    font-size: 24px;
+    line-height: 180%;
+}
+
+
+/* Right sie of grid */
+#sign-up-container {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+#sign-up-container h1 {
+    text-transform: uppercase;
+    padding-bottom: 1.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+}
+
+form input {
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 15px 0 15px 10px;
+    background: rgba(255, 255, 255, 0.068);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+form input::placeholder {
+    color: #D8D8D8;
+}
+
+.password-container img {
+    height: 15px;
+    width: auto;
+    margin-left: -32px;
+    cursor: pointer;
+    transition-duration: .3s;
+    filter: brightness(250%);
+}
+
+#button-sign-up {
+    font-size: 16px;
+    color: #FFFFFF;
+    width: inherit;
+    padding: 20px 0 20px 15px;
+    background-color: #2C99ED;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    transition-duration: .3s;
+}
+
+#button-sign-up:hover {
+    background-color: #0460a7;
+    transition-duration: .3s;
+}
+
+.terms-conditions {
+    margin-top: 1.5em;
+    font-size: 15px;
+}
+
+.terms-conditions a {
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 780px) {
+    .grid-container {
+        flex-direction: column;
+    }
+
+    #main-text-container {
+        margin: 0 auto;
+    }
+
+    #main-text-container h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #main-text-container p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #sign-up-container {
+        padding-top: 100px;
+        margin: 0 auto;
+    }
+
+    form input {
+        font-size: 14px;
+    }
+
+    #button-sign-up {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .grid-container {
+        padding: 8vh 10vw;
+
+    }
+    #main-text-container h1 {
+        font-size: 25px;
+    }
+
+    #main-text-container p {
+        font-size: 12px;
+    }
+
+    #sign-up-container {
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+
+    .terms-conditions {
+        font-size: 10px;
+    }
+
+    form input {
+        font-size: 12px;
+    }
+
+}

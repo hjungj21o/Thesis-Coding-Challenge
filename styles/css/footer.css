@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 50px;
+}
+
+footer a {
+    text-transform: uppercase;
+    padding-left: 25px;
+}
+
+
+@media screen and (max-width: 780px) {
+    footer {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 450px) { 
+    .copyright {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    footer a {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px 0 5px 0;
+        /* margin: 0 auto; */
+    }
+}

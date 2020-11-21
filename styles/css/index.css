@@ -1,0 +1,43 @@
+@import './reset.css';
+@import './header.css';
+@import './content.css';
+@import './footer.css';
+@import './fonts.css';
+
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Roboto-Regular';
+    background-size: cover;
+    color: #D8D8D8;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/background.png');
+    /* background-position: center top; */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 780px) {
+    body {
+        background-size: auto;
+    }
+
+    html {
+        overflow: auto;
+    }
+}
